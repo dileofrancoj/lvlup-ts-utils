@@ -13,6 +13,7 @@ export default defineConfig({
     resolve:{
         alias: {
             '@src': resolve(__dirname, '/src'),
+            '@types': resolve(__dirname, '/src/types'),
             // '@utils': resolve(__dirname, '/src/utils')
         }
     },

@@ -1,1 +1,1 @@
-export * from '@src/check/isString'
+export * from '@src/check/'
