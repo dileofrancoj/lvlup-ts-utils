@@ -1,6 +1,4 @@
-import {describe, expect,it} from 'vitest'
-
-import { isString } from '../isString'
+import { isString } from '@src/check/isString'
 describe('isString >>> ', () => {
   it('should return true if param is ""', () => {
     expect(isString('')).toBe(true)
