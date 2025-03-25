@@ -3,7 +3,8 @@
  el cual no puede ejecutarse nuevamente incluso si se desencadenan más eventos
  */
 // someFn('param1', 'param2') // ['param1','param2']
- type AnyFunction = (...args: unknown[]) => unknown
+
+import type { AnyFunction } from "@src/types/helpers"
 
  // Esto nos tiene que devolver una función
  // fn('param1','param2') -> Parameters<T> (string,string)
@@ -25,8 +26,6 @@ export function throttle<T extends AnyFunction> (fn:T, delay: number = 500): (..
         return fn(...args)
     }
 }
-
-
 
 
 
